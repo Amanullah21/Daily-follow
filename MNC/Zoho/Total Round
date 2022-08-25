@@ -1,0 +1,31 @@
+Zoho Recruitment Process for
+Zoho conducts its recruitment process in 5 rounds. To get a job in Zoho you need to clear all the rounds with the required cut off marks.
+
+1) Written round
+2) Programming round
+3) Advanced programming round
+4) Technical interview round
+5) General HR interview round
+
+
+Written Round :
+    There are many patterns for first round such as (Aptitude + C), (Flowchart + C), etc. To clear this round, you should be good at dry run. Problems generally concentrate on complex loops and nested loops and control flows. Good knowledge in loops and recursions is enough to clear this round. You should also be familiar with basics of pointers as well.
+
+Programming Round :
+    The students who clear the written round are called for Programming Round. You will be provided laptop and turbo C compiler. Sometimes, they don’t allow Java and C++ for second round. You can expect 6-8 programming problems in this round. To clear this round, you should be strong in data structure and algorithms. You can expect questions from Arrays and String manipulation.
+
+Advanced Programming Round :
+    In this round you expect, advanced algorithm problems or a system design problem with database, authentication method and some basic things like logout, send, and login modules. Example: Railway reservation system, mail server.
+
+Technical HR Round :
+    The number of technical HR rounds may vary depending on your performance in the previous HR rounds. You can expect questions from Java, Data structures, approach for the given scenario, databases, and logical apps.
+
+General HR Round :
+    They ask HR questions like :
+        1. Tell me about Yourself
+        2. Why Zoho ?
+        3. About Zoho ?
+        4. How you see yourself after five years from now ?
+        5. What are your strengths and weaknesses ?
+        6. Questions form resume
+        7. Why did you choose CSE?
