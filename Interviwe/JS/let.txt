@@ -1,0 +1,108 @@
+doc link :- https://docs.google.com/document/d/1SDhjzfcJnribWQbfvhoc3ZF3kxhLpr5GPpaMYKihaeA/edit
+All Interview Question
+
+1). Let, Const and var , difference between them ?
+Ans 
+	Var, let, and const is the keyword to declare variables in javascript. Var variable is an old method to declare a variable in javascript. In modern javascript, we use the let and const variable, which was introduced in the ES2015(ES6) update; now, the let and const variable is used more frequently in modern javascript compared to the var variable.
+
+Declearction 
+Var -> redeclaration , reassign  -> var a = 5; var a = 10 ; a = 15 
+Let -> not redeclared , reassign -> let b = 5;   let b = 10;  b = 15;
+Const -> not redeclared ,not reassign -. Const c = 5; const c = 10 ; c = 15
+
+Scope
+	var->      The scope of a var variable is functional scope.
+	Let ->     The scope of a let variable is block scope.	
+	const->  The scope of a const variable is block scope.
+
+Defalt
+Var -> It can be accessed without initialization as its default value is “undefined” 
+Eg:- console.log(a);   Var  a = 5;
+//output in console is undefined;
+
+Let -> It cannot be accessed without initialization, as it returns an error.
+	Eg: - console.log(b); let b = 5;
+	// output:- error -> Cannot access 'b' before initialization
+   
+Const ->It cannot be accessed without initialization, as it cannot be declared without initialization.
+	Eg :- console.log(c) ; const c = 5
+	//output :error -> Cannot access 'c' before initialization
+
+Hosting
+	Var - > it is support hosting -> declaration move to top
+	Let and const -> it can’t support.
+2). What is Closure?  Where do we use closures? Explain with an example ?
+Ans:- 
+i) Closure in action, that is the inner function can have access to the outer function   variable / parameter as well as all the global variables.
+
+ii) A closure is the combination of a function and the lexical environment within which that function was declared.
+
+[  The return statement does not execute the inner function, function  is executed only when followed by () , but rather  the return statement the entire body of the function  ]
+
+Example1 :- 
+
+	Const outerFunction = (a)=>{
+		Let b = 5
+		Const innerFunction =() =>{
+			Let sum = a+b;
+			console.log(“it is example of sum :” +sum)
+}
+innerFunction()
+	}
+	outerFunction(10) 
+	Output  => it is example of sum : 15
+
+Example2:-
+Const outerFunction = (a)=>{
+		Let b = 5
+		Const innerFunction =() =>{
+			Let sum = a+b;
+			console.log(“it is example of sum :” +sum)
+}
+ Return innerFunction
+	}
+
+	Let inner = outerFunction(10) 
+	console.dir(inner) //  show in the scope of closure 
+	inner()
+	 Output  => it is example of sum : 15
+
+
+3)What is a function statement? What is a function declaration ? What is a function expression ? What is Named Function Expression ? Difference between argument and parameter ?   What is a First class function  ? What is the arrow function ?
+
+Ans: - 
+ 1)  function declaration / function statement
+ A function declaration tells the JavaScript engine about a function’s name, return type, and parameters. When a function has been declared, it can be used anytime inside a class or development scope whenever it’s been called/invoked.
+Example: 
+	Function x(){
+		console.log(“it is function declaration”)
+}
+x()
+
+
+2)  function expression
+1)  function expression has been stored in a variable (Var, let, const), the variable can be used as a function.
+2)Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+3) A JavaScript function can also be defined using an expression.
+4)Hosting is not supported 
+Example:- 
+	Var  x = function (){
+		console.log(“it is function expression”)
+	}
+	x()
+
+
+ 3)  Named function expression
+	It is similar to function expression only changes if there is a name for the function.
+	Hosting is not supported.
+Example:-
+	let  x = function y(){console.log(“it is function expression”)}
+	x()
+4) Difference  between Argument and parameter 
+The parameters are the variables that we can define in the function declaration. 
+The arguments are the variables given to the function for execution.
+Explain:- 
+	const x = (a,b)=>{ //a,b  it is Parameter
+		console.log(a+b)
+	}
+	x(4,6) //4,6  it is argument

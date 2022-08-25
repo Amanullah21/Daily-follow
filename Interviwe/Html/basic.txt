@@ -1,0 +1,211 @@
+1. What do you mean by HTML?
+Answer: HTML is known as Hypertext Markup Language. This Language is used for World Wide Web. It’s a standard language that is used for creating web pages.
+
+2. What are the parts of the HTML page?
+Answer:
+Basically, there are two parts of the web pages: Content and Tags, which are responsible for the format of an HTML page.
+
+Let us move to the next HTML Interview Questions.
+
+3. What do you mean by Tags?
+Answer:
+In HTML, page content is placed between the Tags, which are basically responsible for the formatting of the page. Tags are written between less than symbol (<) and greater than (>) symbol. For Example: <h1>text</h1>
+In the above example <h1> is the opening tag and </h1> is the closing tag.
+
+4. Do all HTML tags are written in a pair?
+Answer:
+This is the most common HTML Interview Questions asked in an interview. No, there are some HTML tags are present which can be used as single. For Eg:
+<img>, <br>.
+
+5. What are the list types available in HTML?
+Answer:
+The common list type are available in HTML are given below:
+– Ordered list
+– Unordered list
+– Definition list
+– Menu list
+– Directory list
+
+6. Give the example for putting a comment on the HTML page?
+Answer:
+<!—Text for comment ->
+
+7. How to insert the copyright symbol in the HTML file?
+Answer:
+For copyright symbol, we can use type &copy; or ©
+
+8. How to apply Hyperlink in an HTML page?
+Answer:
+We can use <ahref> tag for HTML page. For eg: <ahref> Text </a>
+
+9.How to change the font colour on the HTML page?
+Answer:
+we can give this command for changing the font color
+<font color=”color”>…</font>
+
+10. What is the Marquee tag?
+Answer:
+For the scrolling text, we use a marquee tag. For Eg: <marquee>text</marquee>
+
+Let us move to the next HTML Interview Questions.
+
+11. How to create an email enable text on the web page?
+Answer:
+For email enable text, you have to write the following command on the web page. <A HREF=”mailto:emailaddress”>text to be clicked</A>
+
+12. How to write the paragraph on the HTML page?
+Answer:
+For the paragraph tag <p> text you want to show the paragraph </p> will be used.
+
+13. How will you make the image as the background of the web pages?
+Answer:
+The command which for making the image as a background is:
+<body background = “image.gif”> where image.gif will be the path of the image.
+
+14. What are the frames?
+Answer:
+By using frames, we can make the navigation of the site easier.
+
+15. What is HTML5?
+Answer:
+HTML5 is the fifth version of HTML language, and it is the currently running version of HTML.
+
+Let us move to the next HTML Interview Questions.
+
+16. Which new tags are included in the HTML5?
+Answer:
+<video> and <audio> are the new tags which are introduced in the HTML5. They are basically used as a replacement for flash player and Silverlight to play multimedia items on the web pages.
+
+17. Which browser supports HTML5?
+Answer:
+Google Chrome, Apple Safari, Mozilla Firefox, and Opera all support most of the HTML5 features.
+
+18.What is the <figure> in the HTML5?
+Answer:
+For representing the self-contained flow content, we use a <figure> tag.
+
+19. What is the Canvas element in the HTML?
+Answer:
+For representing charts, 2D images, graphs on the web page, we use the Canvas element.
+
+20. What are the storage types of HTML5?
+Answer:
+Two storage type of HTML5 are:
+Session Storage– It will store the data related to the current.
+Local Storage- In this data will not be erased when the browser is closed
+
+Part 2 – HTML Interview Questions (Advanced)
+Let us now have a look at the advanced Interview Questions.
+
+21. What do you mean by Application Cache in HTML5?
+Answer:
+The Application cached means the web application is cached. So It can be accessed without an internet connection.
+
+22. Explain the input types of HTML5 for forms?
+Answer:
+Date, DateTime-local, DateTime, month, email.
+
+23. What are applets?
+Answer:
+This is the frequently asked HTML Interview Questions in an HTML Interview. Applets are a small program that can be embedded with web pages to perform some specific functionality like computation, animation.
+
+24. Applets program are written in which language?
+Answer:
+Java
+
+25. How can we get the geographic position of a user in HTML5?
+Answer:
+By using Geolocation API, we can retrieve the location of the user.
+
+Let us move to the next HTML Interview Questions.
+
+26. What do you mean by HTML attribute?
+Answer:
+Additional information given with the elements is known as an attribute. For Eg
+<font size=”10” color=”red”>
+
+27. What is the extension for the HTML page?
+Answer:
+.htm or .html is the extension for HTML
+
+28. What are the different types of heading format supported by HTML?
+Answer:
+HTML heading is use to highlight the content of HTML document. the heading tags which are used in HTML are <h1> to <h6>.
+
+29.How we use JavaScript with HTML?
+Answer:
+By using script tag we can use JavaScript with HTML. For Eg:
+<script>
+document.getElementById(“demo”).innerHTML = “Hello JavaScript!”;
+</script>
+
+30.What is the Get and Post Method?
+Answer:
+GET s use to request the data from the server, and POST is used for submitting the data to a server.
+
+Let us move to the next HTML Interview Questions.
+
+31. Which editor is used for creating the HTML pages?
+Answer:
+There are so many editors are available for HTML pages like Notepad, Notepad++, Sublime Text editor.
+
+32. What is Longdesc in HTML?
+Answer:
+Longdesc is an attribute that allows you to provide a link to another page that contains a description of the frame contents. For example longdesc=”framedescription.html”.
+
+33. How to create a table in HTML?
+Answer:
+By using <table> tag we create the table in HTML. For, e.g. If you want to create a table with 3 rows and 3 columns:
+<table style="width:100%">
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>Jill</td>
+<td>Smith</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td>Jackson</td>
+<td>94</td>
+</tr>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td>80</td>
+</tr>
+<table>
+
+34. What is CSS?
+Answer:
+CSS stands for Cascading Style Sheet. it’s a list of rules that can assign to various HTML elements. It is not case sensitive.
+
+35. What are the web sockets?
+Answer:
+Web Sockets is a next-generation bidirectional communication technology for web applications that operates over a single socket and is exposed via a JavaScript interface in HTML 5 compliant browsers.
+
+Let us move to the next HTML Interview Questions.
+
+36. What is the SPAN tag is used for?
+Answer:
+Span is used for formatting elements in the SPAN block. It is used to select inline text.
+
+37. What are cell spacing and cell padding?
+Answer:
+Cell spacing the attribute that defines the width of the border of the HTML page, and Cell padding is the attribute that defines the space between the cell content.
+
+38. What are the Internationalization Attributes for XHTML Element?
+Answer:
+XML, DIR, LANG
+
+39. What do you mean by Box Model?
+Answer:
+Every Element on a Page is a Rectangular Box and may have Width, Height, Padding, Borders, and Margins. Every section of the box model relates to a CSS property: width, height, padding, border, and margin.
+
+40. Why we use the Embed tag?
+Answer:
+Embed Tag is used for including a Video or an Audio within an HTML Document. The Embed Tag requires a Closing Tag. It requires the Source of the Video or the Audio file that needs to be displayed on the Page.
+Syntax: <EMBED> Source File </EMBED>
