@@ -1,0 +1,185 @@
+1. What is Css Box-Model?
+ans:-
+     The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. According to the CSS box model, the web browser supplies each element as a square prism.
+
+i.  Content:-
+        The content area consists of content like image, text, or other forms of media content. The height and width properties help to modify the box dimensions.
+
+ii. Padding:- 
+        The padding area is the space around the content area and within the border-box. It can be applied to all sides of the box or to the specific, selected side(s) - top, right, bottom, and/or left.
+
+iii.Border:-
+        The border area surrounds the padding and the content, and can be applied to all the sides of the box or to selected side(s) - top, right, bottom, and/or left.
+iv. Margin:-
+        The margin area consists of space between the border and the margin. The margin does not possess its own background color and is completely transparent. It shows the background color of the element, like the body element.
+    
+2. What is Margin in CSS? 
+Ans :- 
+        Margin is a CSS property that defines the empty space around an HTML element. Margins ensure that the specified region around an element remains unoccupied by any neighboring element.
+    
+Syntax:-There are four margin properties, one for each side of the HTML element box.
+       
+        margin-top: adds margin space on top of the element.
+        margin-right: adds margin space on the right of the element.
+        margin-bottom: adds margin space on the bottom of the element.
+        margin-left: adds margin space on the left of the element.
+
+        ## CSS Margin Shorthand Property
+
+i ->    Single Value (margin:20px ):
+        take alside 20px (left,right ,top,bottom = 20px)
+ii->    Two Value (margin:20px 30px)
+        take space 20px top and bottom  and 30px left right 
+iii->    Three Value (margin:20px 30px 40px)
+        take space top 20px and left or right 30px and 40px bottom
+
+    *There is also Negative Margin Avilable.
+
+
+3. Block vs Inline elements ?
+Ans :- 
+    Block:-
+    1)    
+        The element will start on a new line and occupy the full width available. And you can set width and height values.
+    2)  Block elements accept all the margins
+    3)  Div, P, H1-H6 , UL, OL
+
+    Inline:-
+    1)        
+        The element doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height.
+    2)  Inline elements accept only left and right margins.
+    3)  Image,A,B,Strong,I,Span
+
+4. What Are Selectors?
+Ans:- 
+        A selector in CSS is a part of the CSS ruleset, that is basically used to select the element you want to style. CSS selectors select HTML elements according to their id, class, type, attribute, etc.
+
+# Types of Selectors
+        1. CSS Element / tag Selector
+        2. CSS Id Selector
+        3. CSS Class Selector
+        4. CSS Universal Selector
+        5. CSS Group Selector
+
+    1). CSS Element or tag 
+    Ans:-
+        i)  The element selectors select the HTML elements by its tag name.
+        ii) All the <p> elements will be center-aligned and all h1’s will get teal color.
+
+    2). CSS Id Selector
+    Ans:- 
+        i)  An ID selector is declared using a hash, or pound symbol (`#`) preceding a string of characters.
+        ii)  This selector matches any HTML element that has an ID attribute with the same value as that of the selector.
+
+    3). CSS Class Selector
+    Ans:- 
+        i)  Now you want to selects group of players based on their team name(CSK,MI,RCB)
+        ii) In this case we can will call out by using class selector, so all players with particular class  will be selected.
+
+    4). CSS Universal Selector
+    Ans:- 
+        i) Now you wants to select all teams at once, in this case we can use universal selector
+
+Priority of Selectors
+        Inline Style(1000) -> ID(100) -> Class(10) -> Type ans Tag(1) -> Universal(0)
+
+
+5. What are CSS positions?
+Ans :- 
+        The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky)
+
+        1st :- Static
+        2nd:- Relative
+        3rd :- Absolute
+        4th :- Fixed
+        5th :- Sticky, 
+
+
+    1) Static
+            HTML elements are positioned static by default.
+            Static positioned elements are not affected by the top, bottom, left, and right properties.
+            An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+            This <div> element has position: static;
+            Here is the CSS that is used:
+
+            Example
+            div.static {
+            position: static;
+            border: 3px solid #73AD21;
+            }
+
+    2) Relative
+            An element with position: relative; is positioned relative to its normal position.
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+            This <div> element has position: relative;
+            Here is the CSS that is used:
+
+            Example
+                div.relative {
+                    position: relative;
+                    left: 30px;
+                    border: 3px solid #73AD21;
+                }
+
+
+    3) Absolute
+            An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+            However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+            Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+            Here is a simple example:
+            This <div> element has position: relative;This <div> element has position: absolute;
+            Here is the CSS that is used:
+            
+            Example
+                div.relative {
+                    position: relative;
+                    width: 400px;
+                    height: 200px;
+                    border: 3px solid #73AD21;
+                }
+
+                div.absolute {
+                    position: absolute;
+                    top: 80px;
+                    right: 0;
+                    width: 200px;
+                    height: 100px;
+                    border: 3px solid #73AD21;
+                }
+
+
+    4) Fixed
+            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+            A fixed element does not leave a gap in the page where it would normally have been located.
+            CSS that is used:
+
+            Example
+                div.fixed {
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                    width: 300px;
+                    border: 3px solid #73AD21;
+                }
+
+
+    5) Sticky
+            An element with position: sticky; is positioned based on the user's scroll position.
+
+            A sticky element toggles between relative and fixed, depending on the scroll position. 
+            It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+            Note: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). 
+            You must also specify at least one of top, right, bottom or left for sticky positioning to work.
+
+            In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+
+            Example
+                div.sticky {
+                    position: -webkit-sticky; /* Safari */
+                    position: sticky;
+                    top: 0;
+                    background-color: green;
+                    border: 2px solid #4CAF50;
+                }
